@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 /* global presets */
 * {
   margin: 0;
@@ -55,7 +54,7 @@ label {
   border-radius: 3rem;
   cursor: pointer;
 }
-/* Hover */
+
 .learn-more-button:hover {
   color: darkslategray;
 }
@@ -63,6 +62,9 @@ label {
   background-color: gray;
   color: darkslategray;
 }
+/* Navbar styling ends */
+
+/* Home section styling */
 #Home-section h1 {
   text-align: center;
   font-size: 7rem;
@@ -85,7 +87,9 @@ label {
   align-items: center;
   max-width: 100%;
 }
+/* Home section styling ends */
 
+/* Articles Styling */
 .article-section {
   display: flex;
   justify-content: space-around;
@@ -114,12 +118,9 @@ label {
   margin-bottom: 3rem;
   color: #6c6666;
 }
+/* Articles Styling ends */
 
-.car-video {
-  padding: 6rem;
-  padding-top: 3rem;
-}
-
+/* contact styling */
 .Contact-section {
   padding: 2rem;
   font-weight: 300;
@@ -130,8 +131,11 @@ label {
 .Contact-section h2 {
   font-weight: 400;
   margin-bottom: 2rem;
+  padding-top: 0.3;
 }
+/* contact styling ends */
 
+/* Submit button styling */
 input[type="submit"] {
   background-color: darkslategray;
   color: #d2d0d0;
@@ -140,3 +144,18 @@ input[type="submit"] {
   padding: 0.4rem;
   cursor: pointer;
 }
+/* Submit button styling ends*/
+
+/* Footer styling */
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer-line {
+  padding-bottom: 2rem;
+}
+/* Footer styling ends */

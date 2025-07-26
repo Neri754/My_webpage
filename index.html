@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <!-- Header with Navigation -->
-    <header>
-      <nav>
-        <a href="Home">Home</a>
-        <a href="About">About</a>
-        <a href="Resume">Resume</a>
-        <a href="Work">Work</a>
-        <a href="tel">Contact</a>
+    <nav id="navbar">
+        <ul id="nav-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Resume</li>
+        <li>Work</li>
+        <li>Contact</li>
+        </ul>
+        <h3 class="learn-more-button">Learn More</h3>
       </nav>
-    </header>
+    
     <!-- header with navigation Ends-->
 
     <!-- Main content-->
     <main>
-      <!-- Home Section-->
-      <section id="Home">
-        <h1>Welcome To My Website</h1>
+      <!-- Hero Section-->
+      <section id="Home-section">
+        <h1>Welcome To My Website.</h1>
         <p>This is the home section of my Semantic HTML page.</p>
-      </section>
-      <!-- Home section Ends-->
 
-      <!-- About Section-->
-      <section id="About">
+      <div class="container">
+        <img src="pexels-fotios-photos-1107717.jpg" alt="centered-image">
+      </div>
+      </section>
+      <!-- Hero section Ends-->
+
+      <!-- Personal info Section-->
+       <section id="personal-info-section">
+<div class="article-section">
+
+        <article class="single-article">
         <h2>About Me</h2>
-        <article>
           <p>
             I am a web developer with interest in modern HTML5, CSS, and
             JavaScript development
@@ -41,26 +50,23 @@
             <li>Always eager to learn new technology</li>
           </ul>
         </article>
-      </section>
-      <!-- About Section Ends-->
+    <!-- About Section Ends-->
 
       <!-- WOrk Section-->
-      <section id="Work">
+      <article class="single-article">
         <h2>My Work</h2>
-        <article>
+        <article class="my-article">
           <p>Here's a sample of my audio clip</p>
           <audio controls>
-            <source src="audio.com" type="audio/mp3" />
+            <source src="short-round-110940.mp3" type="audio/mp3" />
           </audio>
         </article>
-      </section>
+    
+     
       <!-- WOrk Section Ends-->
-
-      <!-- Resume Section-->
-      <section id="Resume">
+<article class="single-article">
         <h2>Resume</h2>
-        <article>
-          <table border="1">
+        <table border="1">
             <thead>
               <tr>
                 <th>Year</th>
@@ -82,21 +88,30 @@
             </tbody>
           </table>
         </article>
+
+        
       </section>
-      <!--Resume Section Ends-->
+
+      <section class="car-video">
+<video controls>
+        <source src="subscribe.mp4" type="video/mp4">
+      </video>
+    </section>
+
+      <!-- Personal info Section-->
 
       <!--Contact Section-->
-      <section id="Contact">
+      <section class="Contact-section">
         <h2>Contact Me</h2>
         <form action="#" method="post">
           <label for="Name">Name<sup>*</sup></label><br />
-          <input type="text" id="name" name="Name" required> <br/><br/>
+          <input type="text" id="name" name="Name" required /><br /><br />
 
           <label for="email">Email<sup>*</sup></label></br>
-          <input type="email" id="email" name="email" required></br></br>
+          <input type="email" id="email" name="email" required></br></form></br>
           
           <label for="message">Message</label></br>
-          <textarea id="message" name="message" rows="4" required></textarea></br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
           
           <input type="submit" value="Send message">
         </form>
@@ -110,5 +125,5 @@
      <p>&copy; 2025 My Portfolio</p>
        
      </footer>
-</body>
+  </body>
 </html>
